@@ -21,7 +21,7 @@ RUN apk add --update --no-cache \
 
 #No downloadable example config since 0.2.10
 RUN mkdir -p /jmb/config
-ADD --chmod=644 https://github.com/jagrosh/MusicBot/releases/download/$VERSION/JMusicBot-$VERSION.jar /jmb/JMusicBot.jar
+ADD --chmod=644 https://cdn.discordapp.com/attachments/185037029384388608/1291372385361989673/JMusicBot-0.4.3-yt-oauth2-348fc3c.jar?ex=67217a01&is=67202881&hm=b9e41ca74fbabe15d28e3b4d7bca4eb090fd2f6c3107062e2d9840dcfa3b7555& /jmb/JMusicBot.jar
 ADD --chmod=644 https://github.com/jagrosh/MusicBot/releases/download/0.2.9/config.txt /jmb/config/config.txt
 
 COPY --chmod=755 ./docker-entrypoint.sh /jmb
